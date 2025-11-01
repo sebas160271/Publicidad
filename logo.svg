@@ -1,0 +1,24 @@
+<!-- logo.svg - EmpresaPro: isotipo + logotipo sobrio y corporativo -->
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="160" viewBox="0 0 500 160" role="img" aria-label="EmpresaPro — Publicidad y Servicios Empresariales">
+  <defs>
+    <linearGradient id="gradA" x1="0" x2="1">
+      <stop offset="0" stop-color="#16333f"/>
+      <stop offset="1" stop-color="#435a6a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- fondo transparente - isotipo a la izquierda -->
+  <g transform="translate(18,18)">
+    <!-- cuadrado con esquinas redondeadas -->
+    <rect width="84" height="84" rx="12" fill="url(#gradA)"/>
+    <!-- gráfico ascendente (zigzag) con flecha -->
+    <path d="M18 64 L36 44 L56 66 L76 28" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M76 28 L88 16" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- texto: EmpresaPro -->
+  <g transform="translate(120,70)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="700" fill="#0f3a47">EmpresaPro</text>
+    <text x="0" y="34" font-family="Inter, Arial, sans-serif" font-size="16" fill="#506374">Publicidad y Servicios Empresariales</text>
+  </g>
+</svg>
