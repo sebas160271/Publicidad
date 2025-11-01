@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EmpresaPro — Publicidad y Servicios Empresariales</title>
+  <meta name="description" content="EmpresaPro: soluciones de publicidad y servicios empresariales. Marketing, consultoría y desarrollo para impulsar su negocio." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#inicio" aria-label="EmpresaPro - Ir al inicio">
+        <img src="logo.svg" alt="EmpresaPro logo" class="logo-img">
+        <span class="brand-name">EmpresaPro</span>
+      </a>
+
+      <nav class="nav" aria-label="Menú principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto" class="btn-outline">Contacto</a>
+      </nav>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy animate-up">
+          <h1>Publicidad y servicios empresariales que impulsan resultados</h1>
+          <p>Diseñamos estrategias, campañas y productos digitales para generar confianza y crecimiento a su empresa.</p>
+          <div class="hero-cta">
+            <a href="#servicios" class="btn-primary">Ver servicios</a>
+            <a href="#contacto" class="btn-ghost">Contáctanos</a>
+          </div>
+        </div>
+        <div class="hero-media animate-scale">
+          <img src="https://picsum.photos/seed/business/800/520" alt="Equipo de trabajo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <h2 class="section-title">Nuestros servicios</h2>
+        <p class="section-lead">Paquetes adaptados a pymes y empresas que buscan profesionalizar su presencia.</p>
+        <div class="cards-grid">
+          <article class="card animate-fade">
+            <h3>Marketing Digital</h3>
+            <p>Campañas publicitarias, gestión de redes y generación de leads.</p>
+            <a class="link-more" href="#contacto">Solicitar cotización →</a>
+          </article>
+
+          <article class="card animate-fade delay-1">
+            <h3>Branding & Diseño</h3>
+            <p>Identidad visual, piezas gráficas y material corporativo.</p>
+            <a class="link-more" href="#contacto">Solicitar cotización →</a>
+          </article>
+
+          <article class="card animate-fade delay-2">
+            <h3>Desarrollo Web</h3>
+            <p>Sitios corporativos, e-commerce y soluciones a medida.</p>
+            <a class="link-more" href="#contacto">Solicitar cotización →</a>
+          </article>
+
+          <article class="card animate-fade delay-3">
+            <h3>Soporte & Mantenimiento</h3>
+            <p>Planes de soporte y monitoreo para mantener todo en operación.</p>
+            <a class="link-more" href="#contacto">Solicitar cotización →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Galería de proyectos</h2>
+        <p class="section-lead">Casos de éxito y muestras de trabajo.</p>
+        <div class="gallery-grid">
+          <img class="gallery-item" src="https://picsum.photos/seed/p1/600/420" alt="Proyecto 1">
+          <img class="gallery-item" src="https://picsum.photos/seed/p2/600/420" alt="Proyecto 2">
+          <img class="gallery-item" src="https://picsum.photos/seed/p3/600/420" alt="Proyecto 3">
+          <img class="gallery-item" src="https://picsum.photos/seed/p4/600/420" alt="Proyecto 4">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+      <div class="container contact-grid">
+        <div class="contact-panel animate-up">
+          <h2>Hablemos de su proyecto</h2>
+          <p>Complete el formulario y le responderemos en menos de 48 horas.</p>
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="row">
+              <input type="text" name="nombre" placeholder="Nombre completo" required>
+              <input type="email" name="email" placeholder="Correo electrónico" required>
+            </div>
+            <textarea name="mensaje" placeholder="Cuéntanos sobre tu proyecto" rows="5" required></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Enviar</button>
+              <button type="button" id="callBtn" class="btn-ghost">Llámanos</button>
+            </div>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="contact-info">
+          <h3>Información</h3>
+          <p><strong>Tel:</strong> +57 300 000 0000</p>
+          <p><strong>Email:</strong> contacto@empresapro.example</p>
+          <p><strong>Ubicación:</strong> Bogotá, Colombia</p>
+          <a href="#contacto" class="btn-primary small">Solicitar reunión</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> EmpresaPro — Confianza y Calidad</p>
+      <nav class="footer-nav">
+        <a href="#politicas">Políticas</a>
+        <a href="#aviso">Aviso legal</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Modal galería -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button id="modalClose" class="modal-close" aria-label="Cerrar">✕</button>
+      <img id="modalImg" src="" alt="">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  </html>
