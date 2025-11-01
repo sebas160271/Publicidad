@@ -49,3 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const callBtn = document.getElementById('callBtn');
   if (callBtn) callBtn.addEventListener('click', () => { window.location.href = 'tel:+573000000000'; });
 });
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
